@@ -1,1 +1,59 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon" href="favicon.ico"><script>!function(e,t,a,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https://www.google-analytics.com/analytics.js",s.parentNode.insertBefore(o,s)}(window,document,"script",0,"ga"),ga("create","UA-97696989-1","auto"),ga("send","pageview")</script><title>Rubik's Cube</title><link href="static/css/main.79e9e255.css" rel="stylesheet"></head><body><div id="root"></div><script type="text/javascript" src="static/js/main.6b4bb4e4.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rubik's Cube Trainer</title>
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Rubik's Cube Trainer</h1>
+      <p class="subtitle">Учись поворотам, применяй скрамбл и следи за состоянием куба.</p>
+    </div>
+    <div class="actions">
+      <button id="reset">Сброс</button>
+      <button id="scramble">Скрамбл 25 ходов</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="cube-wrapper">
+      <div id="cube" class="cube"></div>
+      <div class="legend">
+        <div><span class="color color-U"></span>U (верх)</div>
+        <div><span class="color color-D"></span>D (низ)</div>
+        <div><span class="color color-L"></span>L (лево)</div>
+        <div><span class="color color-R"></span>R (право)</div>
+        <div><span class="color color-F"></span>F (перед)</div>
+        <div><span class="color color-B"></span>B (зад)</div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <h2>Ходы</h2>
+      <div class="move-grid" id="moves"></div>
+    </section>
+
+    <section class="custom">
+      <h2>Последовательность</h2>
+      <p>Введите ходы через пробел (например: <code>R U R' U'</code>)</p>
+      <div class="row">
+        <input id="sequence" type="text" placeholder="R U R' U' F2" />
+        <button id="apply-sequence">Применить</button>
+      </div>
+      <div class="scramble-output">
+        <p>Текущий скрамбл:</p>
+        <code id="scramble-seq">–</code>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Клавиши: кликай на ход, чтобы применить; сброс и скрамбл доступны сверху.</p>
+  </footer>
+
+  <script src="static/app.js"></script>
+</body>
+</html>
