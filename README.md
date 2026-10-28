@@ -2,6 +2,8 @@
 
 [English](README.md) · [Русский](README.ru.md)
 
+**Archived learning project.** Preserved as part of my learning history. For current backend work, visit my [profile](https://github.com/Raphailinc).
+
 A browser learning project that represents a Rubik's Cube as a two-dimensional unfolded net.
 
 ## What it does
