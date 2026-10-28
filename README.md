@@ -1,19 +1,21 @@
 # 2D Net
 
-Интерактивная визуализация кубика Рубика: 2D-сетка граней, кнопки ходов, ввод произвольных последовательностей и автоскрамбл.
+[English](README.md) · [Русский](README.ru.md)
 
-## Запуск
-Откройте `index.html` в браузере. Никакой сборки и зависимостей.
+A browser learning project that represents a Rubik's Cube as a two-dimensional unfolded net.
 
-## Возможности
-- Кнопки всех базовых ходов (U/D/L/R/F/B, а также `'` и `2`).
-- Скрамбл на 25 случайных ходов, сброс в решённое состояние.
-- Поле ввода для собственной последовательности (пример: `R U R' U' F2`).
-- Цветовая легенда и аккуратная тёмная тема.
+## What it does
 
-## Структура
-- `index.html` — разметка и подключение.
-- `static/style.css` — оформление.
-- `static/app.js` — логика куба (состояние, повороты граней, визуализация).
+- Apply face turns using buttons or move notation.
+- Run a custom move sequence.
+- Generate a scramble and reset the cube.
 
-> Макет — 2D-сетка (нет 3D), но алгоритмы поворотов сохраняют консистентность цветов.
+## Run locally
+
+```bash
+python -m http.server 8000
+```
+
+## Scope and implementation notes
+
+Open `http://localhost:8000`. You can also open `index.html` directly. This is a 2D visualization, with no build step, dependencies or automated test suite.
